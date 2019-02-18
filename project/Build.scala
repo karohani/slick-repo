@@ -175,6 +175,6 @@ object Build extends Build {
   def getSlickDependency(slickComponent: String, version: String): ModuleID = {
     "com.typesafe.slick" %
     (slickComponent + "_" + version.substring(0, version.lastIndexOf('.'))) %
-    (if(version.startsWith("2.10")) {"3.1.1"} else {"3.2.3"})
+    (if(version.startsWith("2.10")) {"3.1.1"} else {"3.3.0"})
   }
 }
